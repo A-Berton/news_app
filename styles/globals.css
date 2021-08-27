@@ -1,9 +1,21 @@
+@import 'bulma/css/bulma.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family:'Kaisei Tokumin', serif;
+}
+
+#top{
+  margin-top:5rem;
 }
 
 a {
@@ -13,4 +25,32 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.card {
+  background-color: #fff5f3;
+  margin: 2em;
+}
+
+.linktonews {
+  color:#3f0b00 
+}
+
+@media only screen and (min-width : 1024px) {
+  #formInput {
+    width: 30%;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width : 1024px) {
+  #formInput {
+    width: 50%;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+
+  #top {
+    margin-left: 20px;
+  }
 }
